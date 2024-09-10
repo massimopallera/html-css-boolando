@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img{
+    max-width: 100%;
+}
+
+.container{
+    width: 70%;
+    margin: auto;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header{
+    background: orange;
+    nav{
+        ul{
+            list-style: none;
+            display: flex;
+            justify-content: space-around;
+        }
+    }
+
+    .logo{
+        width: 150px;
+    }
+
+    .account-icons{
+        display: flex;
+    }
+
+    .account-icons, .logo, nav{
+    }
+}
