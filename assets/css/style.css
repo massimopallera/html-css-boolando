@@ -128,3 +128,32 @@ main{
         font-size: .9rem;
     }
 }
+
+footer{
+    background: rgba(0, 0, 0, 0.863);
+    color: rgb(255, 255, 255);
+    margin-top: 2rem;
+    padding: 2rem 0;
+    border-bottom: 1px solid white;
+    .row{
+        justify-content: space-between;
+    }
+    .right{
+        text-align: right;
+    }
+
+    .left{
+        text-align: left;
+    }
+
+    ul{
+        list-style: none;
+        display: flex;
+        li{
+            margin: 1rem .5rem;
+        }
+        li:first-child{
+            margin-left: 0;
+        }
+    }
+}
