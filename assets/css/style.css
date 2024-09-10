@@ -4,11 +4,19 @@
     padding: 0;
     box-sizing: border-box;
 
+    /* font-family: Roboto */
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+:root{
+    --nav-color: #ff6900;
+    --green-color: #008000;
+    --dark-color: #1a1a1a;
 }
 
 img{
     max-width: 100%;
+    border-radius: 8px;
 }
 a{
     text-decoration: none;
@@ -40,7 +48,7 @@ a{
 
 /* header */
 header{
-    background: orange;
+    background: var(--nav-color);
     color: white;
     padding: .5rem 0;
     font-weight: 900;
@@ -52,21 +60,17 @@ header{
     .logo{
         width: 150px;
     }
-
     .account-icons{
         display: flex;
     }
-
     .account-icons, nav{
         width: 20%;
     }
-
     .account-icons,ul{
         display: flex;
         justify-content: center;
     }
-
-    .account-icons div, ul>li{
+    ul>li{
         margin: 0 .75rem;
     }
 }
@@ -94,11 +98,19 @@ main{
         position: absolute;
         top: 0;
         right: 0;
-        margin-top: 1rem;
-        font-size: 2rem;
+        margin: .5rem;
+        font-size: 1rem;
         background: white;
-        padding: .25rem .75rem;
+        text-align: center;
+        width: 25px;
+        height: 25px;
+        /* padding: .50rem; */
+        border-radius: 50%;
+        i{
+            transform: translate(0,25%);
+        }
         &:hover{
+            background: #000;
             color: red;
             transition-duration: 400ms;
         }
@@ -115,7 +127,7 @@ main{
             padding: .25rem .5rem;
         }
         .sust{
-            background: green;
+            background: var(--green-color);
             color: white;
             padding: .25rem .5rem;
         }
@@ -130,6 +142,7 @@ main{
     }
     .desc{
         font-weight: 800;
+        line-height: 1.7rem;
     }
     .marca{
         font-size: .9rem;
@@ -137,9 +150,9 @@ main{
 }
 
 footer{
-    background: rgba(0, 0, 0, 0.863);
+    background: var(--dark-color);
     color: rgb(255, 255, 255);
-    margin-top: 2rem;
+    margin-top: 4rem;
     padding: 2rem 0;
     border-bottom: 1px solid white;
     .row{
@@ -147,9 +160,9 @@ footer{
     }
     .right{
         p{
-            text-align: center;        }
+            text-align: center;        
+        }
     }
-
     .left{
         text-align: left;
     }
